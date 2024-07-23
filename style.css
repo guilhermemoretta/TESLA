@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+video, .img-tesla {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.logo {
+    filter: brightness(100);
+    position: fixed;
+    width: 120px;
+    margin-top: 6px;
+}
+
+.item, .item-2 {
+    display: flex; /*HABILITA ALGUMAS PROPRIEDADES CSS*/
+    justify-content: space-between; /*CRIA UM ESPAÇAMENTOS ENTRE OS ITENS*/
+    flex-direction: column;  /*DEIXAR UM ITEM EM BAIXO DO OUTRO*/
+    position: relative;
+    height: 100vh;  /*TELA TODA - ALTURA*/
+    width: 100vw;   /*TELA TODA - LARGURA*/  
+    scroll-snap-align: start;
+}
+
+h1 {
+    color: white;
+    font-size: 55px;
+}
+
+.parte-2 {
+    color: #1C1C1C;
+    font-size: 55px;
+
+}
+
+.sub-titulo {
+    color: white;
+}
+
+
+.info-carro {
+    margin: 85px;
+    text-align: center;
+}
+
+.rodape {
+    text-align: center;
+}
+
+button {
+    background-color: rgba(34, 34, 34, 0.8);
+    color: white;
+    padding: 7px 65px;
+    border-radius: 5px;
+    border: none;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn-final{
+
+    margin-top: 700px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.7;
+
+}
+
+.test-drive {
+    color: black;
+    background-color: white;
+
+}
+
+.texto-rodape {
+    color: white;
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+
+
+
+.formulario {
+    position: fixed;
+    top: 200px;
+    width: 500px;
+    height: 100%;
+    z-index: -38%;
+    left: -300%;
+    opacity: 0.9;
+    transition: 1.5s;
+}
+
+.button-form{
+    color: white;
+    background-color: black;
+    opacity: 18;
+    padding: 9px 50px;
+}
+
+@media (max-width: 480px) {
+
+    .formulario {
+    
+        top: 30px;
+        width: 300px;
+        
+    }
+
+    h1, .parte-2 {
+        
+        font-size: 50px;
+    }
+    
+    .test-drive {
+        margin-top: 12px;
+    
+    }
+
+    .btn-final{
+
+        margin-top: 30px;
+        padding: 9px 50px;
+    
+}
+    
+
+}
+
+@media (max-width: 1240px) {
+
+    .formulario {
+    
+        top: 25px;
+        width: 300px;
+        
+    }
+
+    .btn-final{
+
+        margin-top: 300px;
+        padding: 9px 50px;
+    
+}
+
+}
